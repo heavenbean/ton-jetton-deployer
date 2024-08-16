@@ -1,0 +1,21 @@
+{
+  "name": "jetton-deployer",
+  "version": "1.0.0",
+  "description": "This is the most simplest project to deploy new Jetton contract on TON",
+  "main": "index.js",
+  "scripts": {
+    "build": "tact --config ./tact.config.json",
+    "deploy": "ts-node ./contract.deploy.ts"
+  },
+  "keywords": [],
+  "author": "<harrydau88@gmail.com> Harry Dau",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "@tact-lang/compiler": "^1.2.0",
+    "@ton/ton": "^14.0.0",
+    "ton-crypto": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
